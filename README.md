@@ -1,6 +1,8 @@
 #### What can you find here?
 Useful Python code snippets, helpful when working on machine learning modesl with scikit-learn and pandas
 
+#### Snippets are below:
+
 ##### Getting basic info about data
 
 ```python
