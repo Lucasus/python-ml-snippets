@@ -41,10 +41,11 @@ plt.rcParams['figure.figsize'] = [16, 8]
 
 Plot distibution of some value - sort by occurence count, show top 20 
 ```python
-
+import pandas as pd
+pd.value_counts(df['some_column']).nlargest(20).plot.bar()
 ```
 Result:
-
+![Plot 1](plot1.png?raw=true "Title")
 
 
 
