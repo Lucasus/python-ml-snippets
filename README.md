@@ -33,6 +33,9 @@ df.info()
 df.describe()
 ```
 
+##### Data manipulation
+Very useful snippet: https://gist.github.com/bsweger/e5817488d161f37dcbd2
+
 ##### Plotting 
 
 Configuration
