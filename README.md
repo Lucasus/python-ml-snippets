@@ -16,7 +16,6 @@ df = pd.read_csv(
     sep = ';',
     names = ['column_name1', 'column_name2'],
     dtype={'column_name2':np.int})
-
 ```
 
 ##### Getting basic info about data
@@ -29,7 +28,13 @@ df.head()
 
 # Get information about data types, number of rows
 df.info()
-
-
 ```
 
+##### Plotting 
+
+```python
+#Configure default size of plots in Jupyter Notebook (mostly to make them bigger)
+
+import matplotlib.pyplot as plt
+plt.rcParams['figure.figsize'] = [16, 8]
+```
