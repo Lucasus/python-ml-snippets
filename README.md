@@ -28,6 +28,9 @@ df.head()
 
 # Get information about data types, number of rows
 df.info()
+
+# Get basic distribution information
+df.describe()
 ```
 
 ##### Plotting 
