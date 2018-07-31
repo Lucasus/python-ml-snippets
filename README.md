@@ -1,5 +1,5 @@
-# python-ml-snippets
-Python code snippets - scikit-learn, pandas, machine learning
+# What can you find here?
+Useful Python code snippets, helpful when working on machine learning modesl with scikit-learn and pandas
 
 ##### Getting basic info about data
 
