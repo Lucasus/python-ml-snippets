@@ -34,7 +34,6 @@ df.info()
 
 ```python
 #Configure default size of plots in Jupyter Notebook (mostly to make them bigger)
-
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = [16, 8]
 ```
