@@ -36,6 +36,29 @@ df.describe()
 ##### Data manipulation
 Very useful snippet: https://gist.github.com/bsweger/e5817488d161f37dcbd2
 
+##### Training / test sets preparation
+
+Taking first 80% of rows as training set, remaining as test set
+```python
+X = df.loc[:,["attribute_1", "attribute_2", "attribute_3", "attribute_4"]]
+y = df.loc[:, "label"]
+
+train_count = int(len(df.index)*0.8)
+X_train = X.head(train_count)
+y_train = y.head(train_count)
+
+test_count = len(df.index) - train_count
+X_test = X.tail(test_count)
+y_test = y.tail(test_count)
+```
+
+Taking 80% of random rows as training set, remaining as test set
+```python
+X = df.loc[:,["attribute_1", "attribute_2", "attribute_3", "attribute_4"]]
+y = df.loc[:, "label"]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=42)
+```
+
 ##### Plotting 
 
 Configuration
