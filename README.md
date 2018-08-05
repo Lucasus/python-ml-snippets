@@ -41,6 +41,12 @@ Transforming single column
 df['positive_amount'] = df['amount'].apply(lambda x: x > 0)
 ```
 
+Simple filtering 
+```
+# Returns df rows with amount < 0
+df[(df['amount']<0)]
+```
+
 ##### Training / test sets preparation
 
 Taking first 80% of rows as training set, remaining as test set
