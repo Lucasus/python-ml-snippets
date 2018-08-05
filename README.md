@@ -34,7 +34,12 @@ df.describe()
 ```
 
 ##### Data manipulation
-Very useful snippet: https://gist.github.com/bsweger/e5817488d161f37dcbd2
+Very useful snippets: https://gist.github.com/bsweger/e5817488d161f37dcbd2
+
+Transforming single column
+```python
+df['positive_amount'] = df['amount'].apply(lambda x: x > 0)
+```
 
 ##### Training / test sets preparation
 
