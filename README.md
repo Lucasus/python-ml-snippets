@@ -3,6 +3,16 @@ Useful Python code snippets, helpful when working on machine learning modesl wit
 
 #### Snippets are below:
 
+##### Notebook configuration (magic functions)
+
+```python
+#To display inline plots:
+%matplotlib inline
+
+#To get autocompletion:
+%config IPCompleter.greedy=True
+```
+
 ##### Loading data
 
 ```python
