@@ -83,4 +83,19 @@ Result:
 ![Plot 1](plot1.png?raw=true "Title")
 
 
+Displaying scatter matrix (to look for correlations)
+```python
+from pandas.plotting import scatter_matrix
+attributes = ["column_1", "column_2", "column_n"]
+scatter_matrix(df[attributes], figsize=(12,8))
+```
+
+Displaying scatter plot to check in detail correlation between two attributes
+
+```python
+df.plot(kind="scatter", x = "column_1", y = "column_2", alpha = 0.1)
+```
+
+
+
 
