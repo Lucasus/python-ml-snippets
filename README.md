@@ -3,6 +3,15 @@ Useful Python code snippets, helpful when working on machine learning modesl wit
 
 #### Snippets are below:
 
+##### Create Conda environment
+
+Run following command in Anaconda Prompt (Windows) to create Conda environment.
+We also install optionally tensorflow 
+```
+conda create -n coder python=3.6 anaconda
+conda install -n coder -c conda-forge tensorflow
+```
+
 ##### Notebook configuration (magic functions)
 
 ```python
