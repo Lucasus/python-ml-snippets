@@ -52,6 +52,13 @@ df.info()
 df.describe()
 ```
 
+##### Data analysis
+
+Get distribution of categorical column values:
+```
+pp(df['some_column'].value_counts())
+```
+
 ##### Data manipulation
 Very useful snippets: https://gist.github.com/bsweger/e5817488d161f37dcbd2
 
