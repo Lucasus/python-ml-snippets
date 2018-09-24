@@ -12,6 +12,16 @@ conda create -n coder python=3.6 anaconda
 conda install -n coder -c conda-forge tensorflow
 ```
 
+##### Running notebook
+Running Jupyter notebook:
+```
+jupyter notebook
+```
+Running Jupyter lab:
+```
+jupyter lab
+```
+
 ##### Notebook configuration (magic functions)
 
 ```python
