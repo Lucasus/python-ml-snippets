@@ -40,11 +40,15 @@ import pandas as pd
 # Load data from csv file, file doesn't have header column
 # plus setting type of some column 
 df = pd.read_csv(
-    "datasets/some_dataset.csv", 
+    "dataset.csv", 
     header = None, 
     sep = ';',
     names = ['column_name1', 'column_name2'],
     dtype={'column_name2':np.int})
+    
+# Load data from csv, comma as decimal separator, header row exists    
+df = pd.read_csv("dataset.csv", sep = ';', decimal=",")    
+    
 ```
 
 ##### Getting basic info about data
@@ -60,6 +64,9 @@ df.info()
 
 # Get basic distribution information
 df.describe()
+
+# Get basic distribution information including categorical columns
+df.describe(include='all')
 ```
 
 ##### Data analysis
